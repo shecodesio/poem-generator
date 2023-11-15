@@ -13,7 +13,7 @@ function generate(event) {
   let context =
     "Your mission is to generate a short 4 line poem in basic HTML, make sure to follow the user instructions, sign the poem it by SheCodes AI 🤖";
   let instructionsInput = document.querySelector("#instructions");
-  let prompt = instructionsInput.value;
+  let prompt = `Generate a poem about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?context=${context}&prompt=${prompt}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
