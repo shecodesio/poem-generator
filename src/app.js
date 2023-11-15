@@ -23,5 +23,4 @@ function generate(event) {
 }
 
 let poemForm = document.querySelector("#poem-generator");
-let poemElement = document.querySelector("#poem");
 poemForm.addEventListener("submit", generate);
