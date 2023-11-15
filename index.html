@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Poem generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+        Poem generator
+      </h1>
+      <a href="https://www.shecodes.io/" target="_blank">
+        <img src="images/shecodes.png" alt="" width="150">
+      </a>
+    </div>
+    <form id="poem-generator">
+      <input type="text" id="instructions" autofocus class="instructions" required placeholder="📝  Enter the topic of the poem?" />
+      <input type="submit" value="Generate" class="btn">
+    </form>
+
+
+    
+    <div id="poem">
+    </div>
+  </div>
+  <script src="src/app.js"></script>
+</body>
+</html>
