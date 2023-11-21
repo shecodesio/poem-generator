@@ -47,8 +47,6 @@ h1 {
 
 }
 
-
-
 form {
   padding: 30px;
   background: #FFFFFF;
@@ -62,20 +60,28 @@ form {
   width: 80%;
   font-weight: 400;
   font-size: 16px;
-border-radius: 50px;
+  border-radius: 50px;
   line-height: 20px;
-
-  /* Dark */
-
   color: #272044;
 }
 
+.waiting {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
 .btn {
   margin-left: 10px;
-background: #885DF1;
-padding: 14px 24px;
-border-radius: 50px;
-border: none;
-color: #fff;
+  background: #885DF1;
+  padding: 14px 24px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
 
 }
