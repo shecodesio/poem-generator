@@ -59,7 +59,7 @@ h1 {
 
 form {
   display: flex;
-}
+  }
 
 .hint {
   line-height: 1.5;
