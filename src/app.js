@@ -7,6 +7,23 @@ function displayPoem(response) {
   });
 }
 
+function displaySheCodesPoem() {
+  let poem = `
+    SheCodes, a community strong and bright,<br />
+    Women learning to code, taking flight.,<br />
+    With determination and support in sight,,<br />
+    Together we shine, in love for tech we unite.,<br />
+    <strong>SheCodes AI</strong>
+    `;
+
+  new Typewriter("#poem", {
+    strings: poem,
+    autoStart: true,
+    delay: 1,
+  });
+
+}
+
 function generate(event) {
   event.preventDefault();
   let apiKey = "cbbfb900d7a3c5f058f2a44a54t3o340";
@@ -24,3 +41,4 @@ function generate(event) {
 
 let poemForm = document.querySelector("#poem-generator");
 poemForm.addEventListener("submit", generate);
+displaySheCodesPoem();
