@@ -4,6 +4,9 @@ function displayPoem(response) {
     autoStart: true,
     delay: 1,
   });
+
+  let submitButton = document.querySelector('#submit-button')
+  submitButton.removeAttribute('disabled');
 }
 
 function displaySheCodesPoem() {
@@ -31,6 +34,8 @@ function generate(event) {
   let instructionsInput = document.querySelector("#instructions");
   let prompt = `User instructions: Generate a romantic poem about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?context=${context}&prompt=${prompt}&key=${apiKey}`;
+  let submitButton = document.querySelector('#submit-button')
+  submitButton.setAttribute('disabled', 'disabled');
 
   let poemElement = document.querySelector("#poem");
 	poemElement.classList.remove("hidden");

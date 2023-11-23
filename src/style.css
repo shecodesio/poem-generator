@@ -16,25 +16,31 @@ h1 {
   margin: 0;
 }
 
-header p {
-  margin: 0;
-  opacity: 0.9;
-}
-
-.container {
-  margin:  120px auto;
-  max-width: 600px;
-}
-
-.header {
-  margin-bottom: 30px;
+header {
   display: flex;
+  margin: 30px 0;
   justify-content:  space-between;
 }
 
-.header h1 {
+header p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+header h1 {
   margin:  0;
 }
+
+header img {
+  max-width: 150px;
+}
+
+.container {
+  margin:  60px auto;
+  max-width: 600px;
+}
+
 
 .header img {
   margin-top: 5px;
@@ -99,7 +105,6 @@ form {
   }
 }
 
-
 .btn {
   margin-left: 10px;
   background: #885DF1;
@@ -107,5 +112,33 @@ form {
   border-radius: 50px;
   border: none;
   color: #fff;
+}
 
+.btn:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  header {
+    text-align: center;
+    display: block;
+    margin: 15px
+  }
+
+  header p {
+    margin: 10px 0;
+    font-size: 18px;  
+  }
+
+  header img {
+    margin-top: 30px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .container {
+    margin: 30px auto;
+  }
 }
